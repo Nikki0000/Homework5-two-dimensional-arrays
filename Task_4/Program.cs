@@ -63,11 +63,6 @@ void ShowChanged2dArray(int[,] array)
     int rows = array.GetLength(0);
     int cols = array.GetLength(1);
 
-    //bool[] rowToDelete = new bool[rows];
-    //bool[] colToDelete = new bool[cols];
-
-    //int[,] newArray = new int[rows - 1, cols - 1];
-
     int min = array[0, 0];
     int rowIndex = 0;
     int colIndex = 0;
@@ -84,9 +79,6 @@ void ShowChanged2dArray(int[,] array)
             }
         }
     }
-
-    //rowToDelete[rowIndex] = true;
-    //colToDelete[colIndex] = true;
 
     int[,] newArray = new int[rows - 1, cols - 1];
 
